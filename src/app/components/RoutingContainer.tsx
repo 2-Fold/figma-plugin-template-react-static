@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {routes} from '../routes';
+import { routes } from '../routes';
 import PageOne from '../pages/PageOne';
 import PageTwo from '../pages/PageTwo';
-import {MemoryRouter, Routes, Route, Outlet} from 'react-router';
+import { MemoryRouter, Routes, Route, Outlet } from 'react-router';
 import PrimaryLayout from '../layouts/PrimaryLayout';
 
 const RoutingContainer = () => {

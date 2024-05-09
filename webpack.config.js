@@ -15,7 +15,7 @@ module.exports = (env, argv) => ({
 
   module: {
     rules: [
-      {test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/},
+      { test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/ },
 
       {
         test: /\.css$/,
@@ -32,11 +32,11 @@ module.exports = (env, argv) => ({
         ],
       },
 
-      {test: /\.(png|jpg|gif|webp|svg)$/, loader: 'url-loader'},
+      { test: /\.(png|jpg|gif|webp|svg)$/, loader: 'url-loader' },
     ],
   },
 
-  resolve: {extensions: ['.tsx', '.ts', '.jsx', '.js', '.d.ts']},
+  resolve: { extensions: ['.tsx', '.ts', '.jsx', '.js', '.d.ts'] },
 
   output: {
     filename: '[name].js',

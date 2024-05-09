@@ -1,17 +1,14 @@
 import * as React from 'react';
 import Navbar from '../components/Navbar';
-import {useLocation} from 'react-router';
 
 interface PrimaryLayoutProps {
   children: React.ReactNode;
 }
 
-const PrimaryLayout = ({children}: PrimaryLayoutProps) => {
-  const location = useLocation();
-  console.log(location);
+const PrimaryLayout = ({ children }: PrimaryLayoutProps) => {
   return (
     <div className="wrapper h-screen bg-slate-100">
-      <Navbar title={location.pathname} />
+      <Navbar />
       <div className="content p-2">{children}</div>
     </div>
   );
